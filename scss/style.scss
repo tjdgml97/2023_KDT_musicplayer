@@ -1,0 +1,76 @@
+// FONT
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@500&family=Special+Elite&display=swap');
+
+//   font-family: 'Bebas Neue', cursive;
+// font-family: 'Caveat', cursive;
+// font-family: 'Special Elite', cursive;
+
+// RESET
+@import "reset";
+// PAnel
+
+body{
+  font: 16px/1 "Bebas Neue";
+}
+
+figure {
+  position: relative;
+  width: 100%;
+  height: 100vh;   
+  //  뷰포트 만큼임 
+  overflow : hidden;
+  background: linear-gradient(25deg,rgb(97, 137, 82), rgb(201, 237, 157), );
+  // 첫 속성 : 각도 
+
+  h1{
+    position: absolute;
+    top: 7vw;
+    // 7% 만큼 내려라 = 100% = 뷰포트 높이 
+    left : 4vw;
+    font-size: 0;
+    // 여기에 0 - 공간 없어짐 - strong 에 공간 생기면 - 붙음 
+
+    strong {
+      font-size: 40px;
+      line-height: 1;
+      // font: bold 40px/1.4;
+      color: #fff;
+      letter-spacing: 1px;
+      font: 40px/1 "Special Elite";
+    }
+
+    span{
+      font: 16px/1 "Special Elite";
+      margin-top: 15vw;
+      font-size: 16px;
+      line-height: 16px;
+      // 여기서 1주면 font 사이즈 따라감 
+      color: #fff;
+      letter-spacing: 1px;
+    }
+  }
+  .menu{
+    position: absolute;
+    top: 8vh;
+    right: 4vw;
+    font-size: 30px;
+    color: #fff;
+  }
+  
+  // PANEL
+  @import "panel";
+
+  // BTNS
+  @import "btns";
+
+  >p {
+    position: absolute;
+    bottom: 7vh;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px/1;
+    color: #fff;
+  }
+}
+
+

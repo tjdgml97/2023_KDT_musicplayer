@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@500&family=Special+Elite&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font: 16px/1 "Bebas Neue";
+}
+
+figure {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(25deg, rgb(97, 137, 82), rgb(201, 237, 157));
+}
+figure h1 {
+  position: absolute;
+  top: 7vw;
+  left: 4vw;
+  font-size: 0;
+}
+figure h1 strong {
+  font-size: 40px;
+  line-height: 1;
+  color: #fff;
+  letter-spacing: 1px;
+  font: 40px/1 "Special Elite";
+}
+figure h1 span {
+  font: 16px/1 "Special Elite";
+  margin-top: 15vw;
+  font-size: 16px;
+  line-height: 16px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+figure .menu {
+  position: absolute;
+  top: 8vh;
+  right: 4vw;
+  font-size: 30px;
+  color: #fff;
+}
+figure section {
+  position: absolute;
+  width: 20vw;
+  height: 65vh;
+  left: 50%;
+  top: 150%;
+  margin-left: -10vw;
+  margin-top: -32.5vh;
+}
+figure section article {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+}
+figure section article div.inner {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  padding: 5vh 2.5vw 8vh;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  opacity: 0.6;
+}
+figure .btnPrev {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-20vw, -50%);
+  transform: calc(20vw - 60px), -50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0;
+  padding-left: 20px;
+  justify-content: flex-end;
+}
+figure .btnPrev::before, figure .btnPrev::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  transform-origin: left center;
+  transform: rotate(-180deg);
+  transition: 0.5s;
+  background-color: #fff;
+}
+figure .btnPrev::after {
+  transform: rotate(180deg);
+}
+figure .btnPrev span {
+  font-size: 18px;
+  color: #fff;
+  transition: 0.5s;
+}
+figure .btnPrev:hover span {
+  transform: translateX(100%);
+  opacity: 0;
+}
+figure .btnPrev:hover::before {
+  transform: rotate(-30deg);
+}
+figure .btnPrev:hover::after {
+  transform: rotate(30deg);
+}
+figure .btnNext {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  right: 50%;
+  transform: translate(20vw, -50%);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0;
+  padding-right: 20px;
+}
+figure .btnNext::before, figure .btnNext::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  transform-origin: right center;
+  transform: rotate(-180deg);
+  transition: 0.5s;
+  background-color: #fff;
+}
+figure .btnNext::after {
+  transform: rotate(180deg);
+}
+figure .btnNext span {
+  font-size: 18px;
+  color: #fff;
+  transition: 0.5s;
+}
+figure .btnNext:hover span {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+figure .btnNext:hover::before {
+  transform: rotate(-30deg);
+}
+figure .btnNext:hover::after {
+  transform: rotate(30deg);
+}
+figure > p {
+  position: absolute;
+  bottom: 7vh;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px/1;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
